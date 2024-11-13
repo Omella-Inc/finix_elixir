@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"tags\":{\"key\":\"value\"},\"entity\":{\"phone\":\"7145677613\",\"first_name\":\"Bob\",\"last_name\":\"Diaz\",\"email\":\"therocktest@gmail.com\",\"personal_address\":{\"line1\":\"741 Douglass St\",\"city\":\"San Mateo\",\"country\":\"USA\",\"region\":\"CA\",\"line2\":\"Apartment 7\",\"postal_code\":\"94114\"}}}",
+      "url": "https://finix.sandbox-payments-api.com/identities",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"IDd5yrWM5JsYzx1G2mJnFAi8\",\n  \"created_at\" : \"2024-11-13T19:30:54.98Z\",\n  \"updated_at\" : \"2024-11-13T19:30:54.98Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"entity\" : {\n    \"ach_max_transaction_amount\" : 0,\n    \"amex_mid\" : null,\n    \"annual_card_volume\" : 0,\n    \"business_address\" : null,\n    \"business_name\" : null,\n    \"business_phone\" : null,\n    \"business_tax_id_provided\" : false,\n    \"business_type\" : null,\n    \"default_statement_descriptor\" : null,\n    \"discover_mid\" : null,\n    \"dob\" : null,\n    \"doing_business_as\" : null,\n    \"email\" : \"therocktest@gmail.com\",\n    \"first_name\" : \"Bob\",\n    \"has_accepted_credit_cards_previously\" : false,\n    \"incorporation_date\" : null,\n    \"last_name\" : \"Diaz\",\n    \"max_transaction_amount\" : 0,\n    \"mcc\" : null,\n    \"ownership_type\" : null,\n    \"personal_address\" : {\n      \"line1\" : \"741 Douglass St\",\n      \"line2\" : \"Apartment 7\",\n      \"city\" : \"San Mateo\",\n      \"region\" : \"CA\",\n      \"postal_code\" : \"94114\",\n      \"country\" : \"USA\"\n    },\n    \"phone\" : \"7145677613\",\n    \"principal_percentage_ownership\" : null,\n    \"short_business_name\" : null,\n    \"tax_authority\" : null,\n    \"tax_id_provided\" : false,\n    \"title\" : null,\n    \"url\" : null\n  },\n  \"identity_roles\" : [ ],\n  \"tags\" : {\n    \"key\" : \"value\"\n  },\n  \"type\" : \"PERSONAL\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8\"\n    },\n    \"verifications\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/verifications\"\n    },\n    \"merchants\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/merchants\"\n    },\n    \"settlements\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/settlements\"\n    },\n    \"authorizations\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/authorizations\"\n    },\n    \"transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/transfers\"\n    },\n    \"payment_instruments\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/payment_instruments\"\n    },\n    \"associated_identities\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/associated_identities\"\n    },\n    \"disputes\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8/disputes\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 13 Nov 2024 19:30:55 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "8f52dbd213385cbe4181fc14918fe6c0",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "location": "https://finix.sandbox-payments-api.com/identities/IDd5yrWM5JsYzx1G2mJnFAi8",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "98",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "8f52dbd213385cbe4181fc14918fe6c0"
+      },
+      "status_code": 201
+    }
+  }
+]

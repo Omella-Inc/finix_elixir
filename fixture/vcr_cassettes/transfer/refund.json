@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"idempotency_id\":\"b52fee22-19d8-4171-ac75-3954f4c86b27\",\"refund_amount\":100}",
+      "url": "https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE/reversals",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"TRkPGJ1VsCv583oXa24sTZmB\",\n  \"created_at\" : \"2024-11-13T19:28:13.20Z\",\n  \"updated_at\" : \"2024-11-13T19:28:13.32Z\",\n  \"additional_buyer_charges\" : null,\n  \"additional_healthcare_data\" : null,\n  \"additional_purchase_data\" : null,\n  \"address_verification\" : null,\n  \"amount\" : 100,\n  \"amount_requested\" : 100,\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"currency\" : \"USD\",\n  \"destination\" : \"PI9XHJBq7bTtuhL3ooU2RrYS\",\n  \"externally_funded\" : \"UNKNOWN\",\n  \"failure_code\" : null,\n  \"failure_message\" : null,\n  \"fee\" : 0,\n  \"idempotency_id\" : \"b52fee22-19d8-4171-ac75-3954f4c86b27\",\n  \"merchant\" : \"MU3ZjRVavRhfYWo2GGgnjKPP\",\n  \"merchant_identity\" : \"IDuA15LqFR4xPMZivLpnS9J2\",\n  \"messages\" : [ ],\n  \"operation_key\" : \"CARD_NOT_PRESENT_REFUND\",\n  \"parent_transfer\" : \"TRjXjwbmxBMTxFhqxjno6PRE\",\n  \"parent_transfer_trace_id\" : null,\n  \"raw\" : null,\n  \"ready_to_settle_at\" : null,\n  \"receipt_last_printed_at\" : null,\n  \"security_code_verification\" : null,\n  \"source\" : null,\n  \"split_transfers\" : [ ],\n  \"state\" : \"PENDING\",\n  \"statement_descriptor\" : \"FLX*DMPC\",\n  \"subtype\" : \"API\",\n  \"tags\" : { },\n  \"tip_amount\" : null,\n  \"trace_id\" : \"6a8b0d26-4b75-4b1c-aea4-c91ba13e702b\",\n  \"type\" : \"REVERSAL\",\n  \"_links\" : {\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRkPGJ1VsCv583oXa24sTZmB\"\n    },\n    \"parent\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE\"\n    },\n    \"destination\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PI9XHJBq7bTtuhL3ooU2RrYS\"\n    },\n    \"merchant_identity\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDuA15LqFR4xPMZivLpnS9J2\"\n    },\n    \"payment_instruments\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRkPGJ1VsCv583oXa24sTZmB/payment_instruments\"\n    },\n    \"fee_profile\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/fee_profiles/FPmtT4MYmiAs1qjLjneQmk4d\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 13 Nov 2024 19:28:13 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "eced43d204c938e9bb0b9b0256a5d4f1",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "458",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "eced43d204c938e9bb0b9b0256a5d4f1"
+      },
+      "status_code": 201
+    }
+  }
+]

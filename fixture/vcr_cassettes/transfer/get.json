@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"TRjXjwbmxBMTxFhqxjno6PRE\",\n  \"created_at\" : \"2024-11-13T19:15:09.60Z\",\n  \"updated_at\" : \"2024-11-13T19:15:09.60Z\",\n  \"additional_buyer_charges\" : null,\n  \"additional_healthcare_data\" : null,\n  \"additional_purchase_data\" : null,\n  \"address_verification\" : null,\n  \"amount\" : 2995,\n  \"amount_requested\" : 2995,\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"currency\" : \"USD\",\n  \"destination\" : null,\n  \"externally_funded\" : \"UNKNOWN\",\n  \"failure_code\" : null,\n  \"failure_message\" : null,\n  \"fee\" : 0,\n  \"idempotency_id\" : \"b52fee22-19d8-4171-ac75-3954f4c86b25\",\n  \"merchant\" : \"MU3ZjRVavRhfYWo2GGgnjKPP\",\n  \"merchant_identity\" : \"IDuA15LqFR4xPMZivLpnS9J2\",\n  \"messages\" : [ ],\n  \"operation_key\" : \"CARD_NOT_PRESENT_SALE\",\n  \"parent_transfer\" : null,\n  \"parent_transfer_trace_id\" : null,\n  \"raw\" : null,\n  \"ready_to_settle_at\" : \"2024-11-14T19:15:10.26Z\",\n  \"receipt_last_printed_at\" : null,\n  \"security_code_verification\" : null,\n  \"source\" : \"PI9XHJBq7bTtuhL3ooU2RrYS\",\n  \"split_transfers\" : [ ],\n  \"state\" : \"SUCCEEDED\",\n  \"statement_descriptor\" : \"FLX*DMPC\",\n  \"subtype\" : \"API\",\n  \"tags\" : {\n    \"test\" : \"sale\"\n  },\n  \"tip_amount\" : null,\n  \"trace_id\" : \"68230287-c542-407c-acdb-dd3750924b37\",\n  \"type\" : \"DEBIT\",\n  \"_links\" : {\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE\"\n    },\n    \"merchant_identity\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDuA15LqFR4xPMZivLpnS9J2\"\n    },\n    \"payment_instruments\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE/payment_instruments\"\n    },\n    \"reversals\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE/reversals\"\n    },\n    \"fees\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE/fees\"\n    },\n    \"disputes\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRjXjwbmxBMTxFhqxjno6PRE/disputes\"\n    },\n    \"source\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PI9XHJBq7bTtuhL3ooU2RrYS\"\n    },\n    \"fee_profile\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/fee_profiles/FPmtT4MYmiAs1qjLjneQmk4d\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 13 Nov 2024 19:18:48 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "c8c495f91e228200f6287ce8b3b962f4",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "28",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "c8c495f91e228200f6287ce8b3b962f4"
+      },
+      "status_code": 200
+    }
+  }
+]

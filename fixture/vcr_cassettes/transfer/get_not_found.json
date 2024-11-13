@@ -1,0 +1,52 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/transfers/not_tra_id",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"05cfa14a5a756f8ee693bd29971b4922\",\n      \"message\" : \"not_tra_id was not found\",\n      \"code\" : \"NOT_FOUND\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/not_tra_id\"\n        }\n      }\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Wed, 13 Nov 2024 19:18:47 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "05cfa14a5a756f8ee693bd29971b4922",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "513",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "05cfa14a5a756f8ee693bd29971b4922"
+      },
+      "status_code": 404
+    }
+  }
+]
