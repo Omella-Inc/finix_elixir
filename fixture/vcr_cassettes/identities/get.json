@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"ID5WGvRGxfgzz13qcrRwP64B\",\n  \"created_at\" : \"2024-11-19T18:19:43.79Z\",\n  \"updated_at\" : \"2024-11-19T18:19:43.79Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"entity\" : {\n    \"ach_max_transaction_amount\" : 0,\n    \"amex_mid\" : null,\n    \"annual_card_volume\" : 0,\n    \"business_address\" : null,\n    \"business_name\" : null,\n    \"business_phone\" : null,\n    \"business_tax_id_provided\" : false,\n    \"business_type\" : null,\n    \"default_statement_descriptor\" : null,\n    \"discover_mid\" : null,\n    \"dob\" : null,\n    \"doing_business_as\" : null,\n    \"email\" : \"lfrefatti@gmail.com\",\n    \"first_name\" : \"Bob\",\n    \"has_accepted_credit_cards_previously\" : false,\n    \"incorporation_date\" : null,\n    \"last_name\" : \"Diaz\",\n    \"max_transaction_amount\" : 0,\n    \"mcc\" : null,\n    \"ownership_type\" : null,\n    \"personal_address\" : {\n      \"line1\" : null,\n      \"line2\" : null,\n      \"city\" : null,\n      \"region\" : null,\n      \"postal_code\" : \"94114\",\n      \"country\" : null\n    },\n    \"phone\" : null,\n    \"principal_percentage_ownership\" : null,\n    \"short_business_name\" : null,\n    \"tax_authority\" : null,\n    \"tax_id_provided\" : false,\n    \"title\" : null,\n    \"url\" : null\n  },\n  \"identity_roles\" : [ ],\n  \"tags\" : {\n    \"key\" : \"value\"\n  },\n  \"type\" : \"PERSONAL\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B\"\n    },\n    \"verifications\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/verifications\"\n    },\n    \"merchants\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/merchants\"\n    },\n    \"settlements\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/settlements\"\n    },\n    \"authorizations\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/authorizations\"\n    },\n    \"transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/transfers\"\n    },\n    \"payment_instruments\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/payment_instruments\"\n    },\n    \"associated_identities\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/associated_identities\"\n    },\n    \"disputes\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5WGvRGxfgzz13qcrRwP64B/disputes\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Tue, 19 Nov 2024 19:08:34 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "fc75c6dfe04bc361f29a8c69fb0c467e",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "17",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "fc75c6dfe04bc361f29a8c69fb0c467e"
+      },
+      "status_code": 200
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/identities/not_id",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"3873d0e9a3715394a26c02bd263d1de0\",\n      \"message\" : \"not_id was not found\",\n      \"code\" : \"NOT_FOUND\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/not_id\"\n        }\n      }\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Tue, 19 Nov 2024 19:08:33 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "3873d0e9a3715394a26c02bd263d1de0",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "744",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "3873d0e9a3715394a26c02bd263d1de0"
+      },
+      "status_code": 404
+    }
+  }
+]
