@@ -49,4 +49,18 @@ defmodule Finix.IdentitiesTest do
       end
     end
   end
+
+  describe "list identities" do
+    test "search an identity by tag value" do
+      use_cassette "identities/list" do
+        {:ok, response} = Finix.Identities.list([], params: %{"tags.value" => "abcde"})
+
+        assert %{
+                 _embedded: %{
+                   identities: [%{id: "IDnEmXbJYVjPKik6bSZCfgce", tags: %{user_id: "abcde"}}]
+                 }
+               } = response
+      end
+    end
+  end
 end

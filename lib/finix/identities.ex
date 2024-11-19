@@ -18,4 +18,9 @@ defmodule Finix.Identities do
   def get(id, header_opts \\ []) do
     FinixElixir.make_request(:get, "#{@endpoint}/#{id}", nil, header_opts)
   end
+
+  @spec list(Keyword.t(), Keyword.t()) :: {:ok, map()} | {:error, map()}
+  def list(header_opts \\ [], options \\ []) do
+    FinixElixir.make_request(:get, @endpoint, nil, header_opts, options)
+  end
 end

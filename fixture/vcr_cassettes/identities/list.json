@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/identities?tags.value=abcde",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_embedded\" : {\n    \"identities\" : [ {\n      \"id\" : \"IDnEmXbJYVjPKik6bSZCfgce\",\n      \"created_at\" : \"2024-11-19T19:51:57.25Z\",\n      \"updated_at\" : \"2024-11-19T19:51:57.25Z\",\n      \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity\" : {\n        \"ach_max_transaction_amount\" : 0,\n        \"amex_mid\" : null,\n        \"annual_card_volume\" : 0,\n        \"business_address\" : null,\n        \"business_name\" : null,\n        \"business_phone\" : null,\n        \"business_tax_id_provided\" : false,\n        \"business_type\" : null,\n        \"default_statement_descriptor\" : null,\n        \"discover_mid\" : null,\n        \"dob\" : null,\n        \"doing_business_as\" : null,\n        \"email\" : \"lfrefatti@gmail.com\",\n        \"first_name\" : \"Bob\",\n        \"has_accepted_credit_cards_previously\" : false,\n        \"incorporation_date\" : null,\n        \"last_name\" : \"Diaz\",\n        \"max_transaction_amount\" : 0,\n        \"mcc\" : null,\n        \"ownership_type\" : null,\n        \"personal_address\" : {\n          \"line1\" : null,\n          \"line2\" : null,\n          \"city\" : null,\n          \"region\" : null,\n          \"postal_code\" : \"94114\",\n          \"country\" : null\n        },\n        \"phone\" : null,\n        \"principal_percentage_ownership\" : null,\n        \"short_business_name\" : null,\n        \"tax_authority\" : null,\n        \"tax_id_provided\" : false,\n        \"title\" : null,\n        \"url\" : null\n      },\n      \"identity_roles\" : [ ],\n      \"tags\" : {\n        \"user_id\" : \"abcde\"\n      },\n      \"type\" : null,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce\"\n        },\n        \"verifications\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/verifications\"\n        },\n        \"merchants\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/merchants\"\n        },\n        \"settlements\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/settlements\"\n        },\n        \"authorizations\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/authorizations\"\n        },\n        \"transfers\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/transfers\"\n        },\n        \"payment_instruments\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/payment_instruments\"\n        },\n        \"associated_identities\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/associated_identities\"\n        },\n        \"disputes\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDnEmXbJYVjPKik6bSZCfgce/disputes\"\n        },\n        \"application\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities?tags.value=abcde&offset=0&limit=20&sort=created_at,desc&sort=id,desc\"\n    }\n  },\n  \"page\" : {\n    \"offset\" : 0,\n    \"limit\" : 20,\n    \"count\" : 1\n  }\n}",
+      "headers": {
+        "Date": "Tue, 19 Nov 2024 19:52:38 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "f958a12e9fdbff7488f2333c2479fa62",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "87",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "f958a12e9fdbff7488f2333c2479fa62"
+      },
+      "status_code": 200
+    }
+  }
+]
