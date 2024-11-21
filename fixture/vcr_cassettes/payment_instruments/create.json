@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"type\":\"TOKEN\",\"token\":\"TKkMoyQ7FNgV2rdkgeHEKVgj\",\"identity\":\"ID5Kz3kHdaMTXZWL5TKZufGL\"}",
+      "url": "https://finix.sandbox-payments-api.com/payment_instruments",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"PIg95MiZrNa4W18DP1oZi9N\",\n  \"created_at\" : \"2024-11-21T16:29:19.73Z\",\n  \"updated_at\" : \"2024-11-21T16:29:19.73Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"created_via\" : \"API\",\n  \"currency\" : \"USD\",\n  \"disabled_code\" : null,\n  \"disabled_message\" : null,\n  \"enabled\" : true,\n  \"fingerprint\" : \"FPRu47m15dpkmhn3zWtTJ6jc1\",\n  \"identity\" : \"ID5Kz3kHdaMTXZWL5TKZufGL\",\n  \"instrument_type\" : \"PAYMENT_CARD\",\n  \"account_updater_enabled\" : null,\n  \"address\" : {\n    \"line1\" : null,\n    \"line2\" : null,\n    \"city\" : null,\n    \"region\" : null,\n    \"postal_code\" : null,\n    \"country\" : \"USA\"\n  },\n  \"address_verification\" : \"UNKNOWN\",\n  \"bin\" : \"424242\",\n  \"brand\" : \"VISA\",\n  \"card_type\" : \"CREDIT\",\n  \"expiration_month\" : 12,\n  \"expiration_year\" : 2034,\n  \"issuer_country\" : \"NON_USA\",\n  \"last_four\" : \"4242\",\n  \"name\" : \"luis\",\n  \"network_token_enabled\" : null,\n  \"network_token_state\" : \"NOT_ENABLED\",\n  \"security_code_verification\" : \"UNKNOWN\",\n  \"tags\" : { },\n  \"third_party\" : null,\n  \"third_party_token\" : null,\n  \"type\" : \"PAYMENT_CARD\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N\"\n    },\n    \"authorizations\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/authorizations\"\n    },\n    \"transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/transfers\"\n    },\n    \"verifications\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/verifications\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"identity\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5Kz3kHdaMTXZWL5TKZufGL\"\n    },\n    \"updates\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/updates\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Thu, 21 Nov 2024 16:29:19 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Content-Length": "2001",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "cf4eef0eca9ef32cffab48b7db67f4b2",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "expires": "0",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "location": "https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N",
+        "pragma": "no-cache",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "x-content-type-options": "nosniff",
+        "x-envoy-upstream-service-time": "113",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1; mode=block",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "cf4eef0eca9ef32cffab48b7db67f4b2"
+      },
+      "status_code": 201
+    }
+  }
+]

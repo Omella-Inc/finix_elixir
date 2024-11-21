@@ -64,14 +64,14 @@ defmodule FinixElixir do
   defp handle_response(response) do
     case response.status_code do
       code when code in 200..299 -> {:ok, response.body |> keys_to_atoms()}
-      400 -> {:error, response.body}
+      400 -> {:error, response.body |> keys_to_atoms()}
       401 -> {:error, :unauthorized}
       404 -> {:error, :not_found}
       405 -> {:error, :method_not_allowed}
       406 -> {:error, :not_acceptable}
       409 -> {:error, :conflict}
-      422 -> {:error, response.body}
-      500 -> {:error, response.body}
+      422 -> {:error, response.body |> keys_to_atoms()}
+      500 -> {:error, response.body |> keys_to_atoms()}
     end
   end
 

@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/payment_instruments?owner_identity_id=ID5Kz3kHdaMTXZWL5TKZufGL",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_embedded\" : {\n    \"payment_instruments\" : [ {\n      \"id\" : \"PIg95MiZrNa4W18DP1oZi9N\",\n      \"created_at\" : \"2024-11-21T16:29:19.73Z\",\n      \"updated_at\" : \"2024-11-21T16:29:19.73Z\",\n      \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"created_via\" : \"API\",\n      \"currency\" : \"USD\",\n      \"disabled_code\" : null,\n      \"disabled_message\" : null,\n      \"enabled\" : true,\n      \"fingerprint\" : \"FPRu47m15dpkmhn3zWtTJ6jc1\",\n      \"identity\" : \"ID5Kz3kHdaMTXZWL5TKZufGL\",\n      \"instrument_type\" : \"PAYMENT_CARD\",\n      \"account_updater_enabled\" : null,\n      \"address\" : {\n        \"line1\" : null,\n        \"line2\" : null,\n        \"city\" : null,\n        \"region\" : null,\n        \"postal_code\" : null,\n        \"country\" : \"USA\"\n      },\n      \"address_verification\" : \"UNKNOWN\",\n      \"bin\" : \"424242\",\n      \"brand\" : \"VISA\",\n      \"card_type\" : \"CREDIT\",\n      \"expiration_month\" : 12,\n      \"expiration_year\" : 2034,\n      \"issuer_country\" : \"NON_USA\",\n      \"last_four\" : \"4242\",\n      \"name\" : \"luis\",\n      \"network_token_enabled\" : null,\n      \"network_token_state\" : \"NOT_ENABLED\",\n      \"security_code_verification\" : \"UNKNOWN\",\n      \"tags\" : { },\n      \"third_party\" : null,\n      \"third_party_token\" : null,\n      \"type\" : \"PAYMENT_CARD\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N\"\n        },\n        \"authorizations\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/authorizations\"\n        },\n        \"transfers\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/transfers\"\n        },\n        \"verifications\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/verifications\"\n        },\n        \"application\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n        },\n        \"identity\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5Kz3kHdaMTXZWL5TKZufGL\"\n        },\n        \"updates\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIg95MiZrNa4W18DP1oZi9N/updates\"\n        }\n      }\n    }, {\n      \"id\" : \"PIph99UCWbvP2K9moHf9yeix\",\n      \"created_at\" : \"2024-11-21T16:24:31.27Z\",\n      \"updated_at\" : \"2024-11-21T16:24:31.27Z\",\n      \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"created_via\" : \"API\",\n      \"currency\" : \"USD\",\n      \"disabled_code\" : null,\n      \"disabled_message\" : null,\n      \"enabled\" : true,\n      \"fingerprint\" : \"FPRogKWsRQks2HGaau5eGR9AF\",\n      \"identity\" : \"ID5Kz3kHdaMTXZWL5TKZufGL\",\n      \"instrument_type\" : \"PAYMENT_CARD\",\n      \"account_updater_enabled\" : false,\n      \"address\" : {\n        \"line1\" : \"900 Metro Center Blv\",\n        \"line2\" : null,\n        \"city\" : \"San Francisco\",\n        \"region\" : \"CA\",\n        \"postal_code\" : \"94404\",\n        \"country\" : \"USA\"\n      },\n      \"address_verification\" : \"UNKNOWN\",\n      \"bin\" : \"489514\",\n      \"brand\" : \"VISA\",\n      \"card_type\" : \"UNKNOWN\",\n      \"expiration_month\" : 3,\n      \"expiration_year\" : 2029,\n      \"issuer_country\" : \"UNKNOWN\",\n      \"last_four\" : \"0006\",\n      \"name\" : \"Ayisha Kline\",\n      \"network_token_enabled\" : false,\n      \"network_token_state\" : \"NOT_ENABLED\",\n      \"security_code_verification\" : \"UNKNOWN\",\n      \"tags\" : {\n        \"card_name\" : \"Business Card\"\n      },\n      \"third_party\" : null,\n      \"third_party_token\" : null,\n      \"type\" : \"PAYMENT_CARD\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIph99UCWbvP2K9moHf9yeix\"\n        },\n        \"authorizations\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIph99UCWbvP2K9moHf9yeix/authorizations\"\n        },\n        \"transfers\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIph99UCWbvP2K9moHf9yeix/transfers\"\n        },\n        \"verifications\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIph99UCWbvP2K9moHf9yeix/verifications\"\n        },\n        \"application\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n        },\n        \"identity\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/ID5Kz3kHdaMTXZWL5TKZufGL\"\n        },\n        \"updates\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIph99UCWbvP2K9moHf9yeix/updates\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments?offset=0&limit=20&sort=created_at,desc&sort=id,desc\"\n    }\n  },\n  \"page\" : {\n    \"offset\" : 0,\n    \"limit\" : 20,\n    \"count\" : 2\n  }\n}",
+      "headers": {
+        "Date": "Thu, 21 Nov 2024 16:44:46 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "4168fc1756ebbd4bd07101f21d3d1072",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "85",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "4168fc1756ebbd4bd07101f21d3d1072"
+      },
+      "status_code": 200
+    }
+  }
+]
