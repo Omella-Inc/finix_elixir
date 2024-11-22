@@ -23,4 +23,9 @@ defmodule Finix.PaymentInstruments do
   def list(header_opts \\ [], options \\ []) do
     FinixElixir.make_request(:get, @endpoint, nil, header_opts, options)
   end
+
+  @spec update(String.t(), map(), Keyword.t()) :: {:error, map()} | {:ok, map()}
+  def update(id, params, header_opts \\ []) do
+    FinixElixir.make_request(:put, "#{@endpoint}/#{id}", params, header_opts)
+  end
 end
