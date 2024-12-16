@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/split_transfers/split_transfer_aHU5gwUhWJihCLsyD9JBZp",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"split_transfer_aHU5gwUhWJihCLsyD9JBZp\",\n  \"created_at\" : \"2024-12-16T18:48:14.86Z\",\n  \"updated_at\" : \"2024-12-16T18:48:14.86Z\",\n  \"amount\" : 1000,\n  \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"currency\" : \"USD\",\n  \"fee\" : 0,\n  \"fee_profile_id\" : \"FPmtT4MYmiAs1qjLjneQmk4d\",\n  \"identity_id\" : \"IDaiYnh99kd71ranxjkCRyJr\",\n  \"merchant_id\" : \"MU38dTU1BuLAHVdFNygHHrpo\",\n  \"parent_transfer_id\" : \"TRrV7tVQMnht38j8ukbX2tGb\",\n  \"ready_to_settle_at\" : \"2024-12-17T18:49:03.25Z\",\n  \"tags\" : { },\n  \"type\" : \"CREDIT\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/split_transfers/split_transfer_aHU5gwUhWJihCLsyD9JBZp\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Mon, 16 Dec 2024 21:01:55 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "5a0f481148aa448b465e06db75bdd1dd",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "19",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "5a0f481148aa448b465e06db75bdd1dd"
+      },
+      "status_code": 200
+    }
+  }
+]

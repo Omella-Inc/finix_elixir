@@ -1,0 +1,52 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"source\":\"PI9XHJBq7bTtuhL3ooU2RrYS\",\"currency\":\"USD\",\"tags\":{\"test\":\"sale\"},\"merchant\":\"MU3ZjRVavRhfYWo2GGgnjKPP\",\"amount\":1000000000,\"idempotency_id\":\"b52fee22-19d8-4171-ac75-3954f4c86b31\"}",
+      "url": "https://finix.sandbox-payments-api.com/transfers",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"74c05d01a93642ce\",\n      \"message\" : \"Transfer TR7Y9ZzZ1xYFpm94KjkAMHyJ was declined. Cause: Amount 1000000000 in cents is greater than maximum allowed amount of 12000000 in cents\",\n      \"code\" : \"PAYMENT_DECLINED\",\n      \"failure_code\" : \"MAX_TRANSACTION_AMOUNT_EXCEEDED\",\n      \"failure_message\" : \"The transaction was declined because it exceeded the max transaction amount that's associated with the Merchant. The Application needs to reprovision the Merchant with a higher max transaction amount or create a transaction with a lower amount.\",\n      \"_links\" : {\n        \"transfer\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TR7Y9ZzZ1xYFpm94KjkAMHyJ\"\n        },\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers\"\n        }\n      },\n      \"transfer\" : \"TR7Y9ZzZ1xYFpm94KjkAMHyJ\"\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Mon, 16 Dec 2024 15:05:43 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Content-Length": "936",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "bd79dd04d6480466e0b49dba49f88765",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "expires": "0",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "pragma": "no-cache",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "x-content-type-options": "nosniff",
+        "x-envoy-upstream-service-time": "680",
+        "x-frame-options": "DENY",
+        "x-xss-protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "bd79dd04d6480466e0b49dba49f88765"
+      },
+      "status_code": 402
+    }
+  }
+]

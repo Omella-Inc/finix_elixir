@@ -21,6 +21,22 @@ defmodule Finix.TransferTest do
         refute response[:id] == nil
       end
     end
+
+    test "error 402 when creating a payment transfer" do
+      use_cassette "transfer/create_error_402" do
+        {:error, _} =
+          Finix.Transfers.create(%{
+            merchant: "MU3ZjRVavRhfYWo2GGgnjKPP",
+            currency: "USD",
+            amount: 1_000_000_000,
+            source: "PI9XHJBq7bTtuhL3ooU2RrYS",
+            tags: %{
+              test: "sale"
+            },
+            idempotency_id: "b52fee22-19d8-4171-ac75-3954f4c86b31"
+          })
+      end
+    end
   end
 
   describe "get a payment transfer" do
