@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/merchants/MU3ZjRVavRhfYWo2GGgnjKPP",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"MU3ZjRVavRhfYWo2GGgnjKPP\",\n  \"created_at\" : \"2024-11-12T13:45:49.51Z\",\n  \"updated_at\" : \"2025-01-21T13:07:57.43Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"card_cvv_required\" : false,\n  \"card_expiration_date_required\" : true,\n  \"card_network_details\" : null,\n  \"convenience_charges_enabled\" : false,\n  \"country\" : \"USA\",\n  \"creating_transfer_from_report_enabled\" : false,\n  \"currencies\" : [ \"USD\" ],\n  \"default_partial_authorization_enabled\" : false,\n  \"disbursements_ach_pull_enabled\" : false,\n  \"disbursements_ach_push_enabled\" : false,\n  \"disbursements_card_pull_enabled\" : false,\n  \"disbursements_card_push_enabled\" : false,\n  \"disbursements_same_day_ach_pull_enabled\" : false,\n  \"disbursements_same_day_ach_push_enabled\" : false,\n  \"fee_ready_to_settle_upon\" : \"PROCESSOR_WINDOW\",\n  \"gateway\" : null,\n  \"gross_settlement_enabled\" : false,\n  \"identity\" : \"IDuA15LqFR4xPMZivLpnS9J2\",\n  \"instant_payouts_card_push_enabled\" : false,\n  \"level_two_level_three_data_enabled\" : false,\n  \"loan_repayment\" : null,\n  \"mcc\" : \"0742\",\n  \"merchant_name\" : \"Dunder Mifflin Paper Company\",\n  \"merchant_profile\" : \"MPvNU9vPGGbanNNY9qTxBmgG\",\n  \"mid\" : \"FNXjCKytXRgrBqueT8HS4sLPS\",\n  \"onboarding_state\" : \"APPROVED\",\n  \"processing_enabled\" : true,\n  \"processor\" : \"DUMMY_V1\",\n  \"processor_details\" : {\n    \"mid\" : \"FNXjCKytXRgrBqueT8HS4sLPS\",\n    \"api_key\" : \"secretValue\"\n  },\n  \"ready_to_settle_upon\" : \"PROCESSOR_WINDOW\",\n  \"ready_to_settle_upon_delay_alignment\" : \"NONE\",\n  \"rent_surcharges_enabled\" : false,\n  \"settlement_enabled\" : true,\n  \"settlement_funding_identifier\" : \"UNSET\",\n  \"settlement_queue_mode\" : \"UNSET\",\n  \"surcharges_enabled\" : false,\n  \"tags\" : {\n    \"key_2\" : \"value_2\"\n  },\n  \"verification\" : \"VIg8RvKQWQBzoQXu5Ro2u9UG\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/merchants/MU3ZjRVavRhfYWo2GGgnjKPP\"\n    },\n    \"identity\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDuA15LqFR4xPMZivLpnS9J2\"\n    },\n    \"verifications\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/merchants/MU3ZjRVavRhfYWo2GGgnjKPP/verifications\"\n    },\n    \"merchant_profile\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/merchant_profiles/MPvNU9vPGGbanNNY9qTxBmgG\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"verification\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/verifications/VIg8RvKQWQBzoQXu5Ro2u9UG\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Tue, 21 Jan 2025 14:56:11 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "011395c9f57e8bc1ea1c52585de2c008",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "14",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "011395c9f57e8bc1ea1c52585de2c008"
+      },
+      "status_code": 200
+    }
+  }
+]
