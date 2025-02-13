@@ -23,6 +23,8 @@ defmodule FinixElixir do
     Jason.encode!(body)
   end
 
+  def process_response_body(""), do: :no_content
+
   def process_response_body(body) do
     body
     |> Jason.decode()
@@ -74,9 +76,11 @@ defmodule FinixElixir do
     end
   end
 
-  defp keys_to_atoms(string_key_map) do
+  defp keys_to_atoms(string_key_map) when is_map(string_key_map) do
     string_key_map
     |> Jason.encode!()
     |> Jason.decode!(keys: :atoms)
   end
+
+  defp keys_to_atoms(data), do: data
 end

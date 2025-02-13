@@ -1,0 +1,54 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"action\":\"RELEASE\",\"ids\":[\"settlement_queue_entry_nTFgdfnEBYjaCSusVeATN8\"]}",
+      "url": "https://finix.sandbox-payments-api.com/settlement_queue_entries",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "put",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "",
+      "headers": {
+        "Date": "Wed, 12 Feb 2025 23:42:49 GMT",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "expires": "0",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "c5b8dbe397ff6b2d0829579b43d683ef",
+        "pragma": "no-cache",
+        "x-frame-options": "DENY",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "x-content-type-options": "nosniff",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-envoy-upstream-service-time": "294",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "c5b8dbe397ff6b2d0829579b43d683ef"
+      },
+      "status_code": 204
+    }
+  }
+]

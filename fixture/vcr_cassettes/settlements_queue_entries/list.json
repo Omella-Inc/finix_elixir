@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/settlement_queue_entries",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_embedded\" : {\n    \"settlement_queue_entries\" : [ {\n      \"id\" : \"settlement_queue_entry_sEaXU5vcnLT8D8h9r6RctY\",\n      \"created_at\" : \"2025-02-12T15:27:17.51Z\",\n      \"updated_at\" : \"2025-02-12T15:29:59.66Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TRwD1rqg45hHBmUrFvwavoqb\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:27:15.81Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_sEaXU5vcnLT8D8h9r6RctY\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_sC3m5dU7d3tn1rR32vVhNQ\",\n      \"created_at\" : \"2025-02-12T15:27:17.01Z\",\n      \"updated_at\" : \"2025-02-12T15:29:59.64Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TRgM3nutMnTWax2ZVsg5KyJf\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:27:15.81Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_sC3m5dU7d3tn1rR32vVhNQ\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_sBhR9cJDNv3CfmUEzzYygs\",\n      \"created_at\" : \"2025-02-12T15:27:16.84Z\",\n      \"updated_at\" : \"2025-02-12T15:29:59.62Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"split_transfer_sugsUkDtcPkxZVks6pnHNM\",\n      \"entity_type\" : \"SPLIT_TRANSFER\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:27:15.81Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_sBhR9cJDNv3CfmUEzzYygs\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nUVJ61k4m73WhwYPnTNZc4\",\n      \"created_at\" : \"2025-02-12T15:26:13.04Z\",\n      \"updated_at\" : \"2025-02-12T15:26:13.04Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TReiYfL665GektXUnxbmG9La\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:26:12.07Z\",\n      \"state\" : \"PENDING\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nUVJ61k4m73WhwYPnTNZc4\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nUi7fFQowKRL5SqCEL21HN\",\n      \"created_at\" : \"2025-02-12T15:26:12.89Z\",\n      \"updated_at\" : \"2025-02-12T15:26:12.89Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TRoxfPGDeUnN2mpAk6ywUP5f\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:26:12.07Z\",\n      \"state\" : \"PENDING\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nUi7fFQowKRL5SqCEL21HN\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nTFgdfnEBYjaCSusVeATN8\",\n      \"created_at\" : \"2025-02-12T15:26:12.74Z\",\n      \"updated_at\" : \"2025-02-12T15:26:12.74Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"split_transfer_nNrK4jDtUkDvrK1X52fcZC\",\n      \"entity_type\" : \"SPLIT_TRANSFER\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:26:12.07Z\",\n      \"state\" : \"PENDING\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nTFgdfnEBYjaCSusVeATN8\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nUV6CopSpdwarnmAVfrr6b\",\n      \"created_at\" : \"2025-02-12T15:11:54.04Z\",\n      \"updated_at\" : \"2025-02-12T15:19:46.97Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TR7wotPUwAUC5cjnivwN5CvM\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:11:52.47Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nUV6CopSpdwarnmAVfrr6b\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nTsv1m5jird9TeXDbduRsg\",\n      \"created_at\" : \"2025-02-12T15:11:53.70Z\",\n      \"updated_at\" : \"2025-02-12T15:19:46.95Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"TR6QUa62YNsfdb92uj4sE8CQ\",\n      \"entity_type\" : \"FEE\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:11:52.47Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nTsv1m5jird9TeXDbduRsg\"\n        }\n      }\n    }, {\n      \"id\" : \"settlement_queue_entry_nRFaZ1Xos2kb8qanmHFeMi\",\n      \"created_at\" : \"2025-02-12T15:11:53.28Z\",\n      \"updated_at\" : \"2025-02-12T15:19:46.93Z\",\n      \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"entity_id\" : \"split_transfer_nKZKNpDN9PHa9NdZJhataj\",\n      \"entity_type\" : \"SPLIT_TRANSFER\",\n      \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"platform_id\" : \"PLoMxXWbqwEMT5N1upSaNUbJ\",\n      \"ready_to_settle_after\" : \"2025-02-13T15:11:52.47Z\",\n      \"state\" : \"RELEASED\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/settlement_engine/settlement_queue_entries/settlement_queue_entry_nRFaZ1Xos2kb8qanmHFeMi\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlement_queue_entries\"\n    },\n    \"next\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlement_queue_entries?after_cursor=settlement_queue_entry_nRFaZ1Xos2kb8qanmHFeMi\"\n    }\n  },\n  \"page\" : {\n    \"limit\" : 100,\n    \"next_cursor\" : \"settlement_queue_entry_nRFaZ1Xos2kb8qanmHFeMi\"\n  }\n}",
+      "headers": {
+        "Date": "Wed, 12 Feb 2025 21:29:44 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "expires": "0",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "eb9fb1ae845760f4fd64d8c61765df2e",
+        "pragma": "no-cache",
+        "x-frame-options": "DENY",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-envoy-upstream-service-time": "41",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "eb9fb1ae845760f4fd64d8c61765df2e"
+      },
+      "status_code": 200
+    }
+  }
+]

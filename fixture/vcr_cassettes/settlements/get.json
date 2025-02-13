@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"ST7Zv9urzE2fkxtXq1NGMijk\",\n  \"created_at\" : \"2025-02-12T15:29:59.77Z\",\n  \"updated_at\" : \"2025-02-12T21:26:07.30Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"currency\" : \"USD\",\n  \"destination\" : null,\n  \"funds_flow\" : null,\n  \"identity\" : \"IDcBRoYmENZ6w5rykNyFE74p\",\n  \"is_exception\" : false,\n  \"merchant_id\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n  \"net_amount\" : 24245,\n  \"payment_type\" : null,\n  \"payout_profile_id\" : \"POu8vbjWAg1zz4kBMvns2ZBp\",\n  \"processor\" : \"DUMMY_V1\",\n  \"status\" : \"AWAITING_APPROVAL\",\n  \"tags\" : { },\n  \"total_amount\" : 25000,\n  \"total_fee\" : 755,\n  \"total_fees\" : 755,\n  \"type\" : \"MERCHANT_REVENUE\",\n  \"window_end_time\" : \"2025-02-12T21:26:00.00Z\",\n  \"window_start_time\" : \"2025-02-01T05:00:00.00Z\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"identity\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDcBRoYmENZ6w5rykNyFE74p\"\n    },\n    \"funding_transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/funding_transfers\"\n    },\n    \"transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers\"\n    },\n    \"fees\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers?type=fee\"\n    },\n    \"reversals\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers?type=reverse\"\n    },\n    \"credits\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers?type=credit\"\n    },\n    \"debits\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers?type=debit\"\n    },\n    \"disputes\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST7Zv9urzE2fkxtXq1NGMijk/transfers?type=dispute\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 12 Feb 2025 22:35:04 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "0d6fdab21b4fa5626ae5eab54ce55837",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "42",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "0d6fdab21b4fa5626ae5eab54ce55837"
+      },
+      "status_code": 200
+    }
+  }
+]
