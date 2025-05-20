@@ -37,7 +37,7 @@ defmodule FinixElixir do
   def make_request(method, endpoint, body \\ "", headers \\ [], options \\ []) do
     options =
       options
-      |> Keyword.put(:recv_timeout, 30_000)
+      |> Keyword.put(:recv_timeout, options[:timeout] || 30_000)
       |> Keyword.put(:ssl, [
         {:versions, [:"tlsv1.2", :"tlsv1.3", :"tlsv1.1", :tlsv1]},
         {:verify, :verify_none}

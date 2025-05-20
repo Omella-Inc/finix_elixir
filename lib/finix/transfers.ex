@@ -10,8 +10,8 @@ defmodule Finix.Transfers do
   @endpoint "transfers"
 
   @spec create(map(), Keyword.t()) :: {:error, map()} | {:ok, map()}
-  def create(params, header_opts \\ []) do
-    FinixElixir.make_request(:post, @endpoint, params, header_opts)
+  def create(params, header_opts \\ [], options \\ []) do
+    FinixElixir.make_request(:post, @endpoint, params, header_opts, options)
   end
 
   @spec get(String.t(), Keyword.t()) :: {:ok, map()} | {:error, map()}
