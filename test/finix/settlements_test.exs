@@ -21,4 +21,13 @@ defmodule Finix.SettlementsTest do
       end
     end
   end
+
+  describe "list settlement entries" do
+    test "list entries of a settlement" do
+      use_cassette "settlements/list_entries" do
+        settlement_id = "ST3cN2PgJS9NqaqwchnHKsni"
+        {:ok, _} = Finix.Settlements.list_entries(settlement_id)
+      end
+    end
+  end
 end

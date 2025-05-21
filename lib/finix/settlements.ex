@@ -20,4 +20,15 @@ defmodule Finix.Settlements do
   def update(id, params, header_opts \\ []) do
     FinixElixir.make_request(:put, "#{@endpoint}/#{id}", params, header_opts ++ @finix_version)
   end
+
+  @spec list_entries(String.t(), Keyword.t()) :: {:error, map()} | {:ok, map()}
+  def list_entries(id, options \\ [], header_opts \\ []) do
+    FinixElixir.make_request(
+      :get,
+      "#{@endpoint}/#{id}/entries",
+      nil,
+      header_opts ++ @finix_version,
+      options
+    )
+  end
 end
