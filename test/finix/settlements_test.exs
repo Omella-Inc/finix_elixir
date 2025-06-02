@@ -30,4 +30,13 @@ defmodule Finix.SettlementsTest do
       end
     end
   end
+
+  describe "list settlement funding transfers" do
+    test "list funding transfers of a settlement" do
+      use_cassette "settlements/list_funding_transfers" do
+        settlement_id = "ST3cN2PgJS9NqaqwchnHKsni"
+        {:ok, _} = Finix.Settlements.list_funding_transfers(settlement_id)
+      end
+    end
+  end
 end

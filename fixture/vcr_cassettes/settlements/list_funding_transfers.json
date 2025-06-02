@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/settlements/ST3cN2PgJS9NqaqwchnHKsni/funding_transfers",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_embedded\" : {\n    \"transfers\" : [ {\n      \"id\" : \"TRuuR8hjzFLfKF3gxGAXaaR5\",\n      \"created_at\" : \"2025-02-13T04:00:15.44Z\",\n      \"updated_at\" : \"2025-02-13T04:01:04.80Z\",\n      \"additional_buyer_charges\" : null,\n      \"additional_healthcare_data\" : null,\n      \"additional_purchase_data\" : null,\n      \"address_verification\" : null,\n      \"amount\" : 48520,\n      \"amount_requested\" : 48520,\n      \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"currency\" : \"USD\",\n      \"destination\" : \"PIhwU3REREBtt1HWGiCcW41c\",\n      \"externally_funded\" : \"UNKNOWN\",\n      \"failure_code\" : null,\n      \"failure_message\" : null,\n      \"fee\" : 0,\n      \"fee_profile\" : \"FPmtT4MYmiAs1qjLjneQmk4d\",\n      \"idempotency_id\" : null,\n      \"merchant\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"merchant_identity\" : \"IDcBRoYmENZ6w5rykNyFE74p\",\n      \"messages\" : [ ],\n      \"operation_key\" : \"STANDARD_MERCHANT_FUNDING_PUSH_TO_ACH\",\n      \"parent_transfer\" : null,\n      \"parent_transfer_trace_id\" : null,\n      \"raw\" : null,\n      \"ready_to_settle_at\" : null,\n      \"receipt_last_printed_at\" : null,\n      \"security_code_verification\" : null,\n      \"source\" : null,\n      \"split_transfers\" : null,\n      \"state\" : \"SUCCEEDED\",\n      \"statement_descriptor\" : null,\n      \"subtype\" : \"SETTLEMENT_MERCHANT\",\n      \"supplemental_fee\" : null,\n      \"tags\" : { },\n      \"tip_amount\" : null,\n      \"trace_id\" : \"35540338-b42f-46b4-83c0-0e80663c8e79\",\n      \"type\" : \"CREDIT\",\n      \"_links\" : {\n        \"application\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n        },\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRuuR8hjzFLfKF3gxGAXaaR5\"\n        },\n        \"merchant_identity\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDcBRoYmENZ6w5rykNyFE74p\"\n        },\n        \"payment_instruments\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRuuR8hjzFLfKF3gxGAXaaR5/payment_instruments\"\n        },\n        \"reversals\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRuuR8hjzFLfKF3gxGAXaaR5/reversals\"\n        },\n        \"fees\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRuuR8hjzFLfKF3gxGAXaaR5/fees\"\n        },\n        \"disputes\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRuuR8hjzFLfKF3gxGAXaaR5/disputes\"\n        },\n        \"destination\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIhwU3REREBtt1HWGiCcW41c\"\n        },\n        \"fee_profile\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/fee_profiles/FPmtT4MYmiAs1qjLjneQmk4d\"\n        }\n      }\n    }, {\n      \"id\" : \"TRs2gnpaFEFk2zdyQ37GMezU\",\n      \"created_at\" : \"2025-02-13T04:00:15.04Z\",\n      \"updated_at\" : \"2025-02-13T04:01:04.53Z\",\n      \"additional_buyer_charges\" : null,\n      \"additional_healthcare_data\" : null,\n      \"additional_purchase_data\" : null,\n      \"address_verification\" : null,\n      \"amount\" : 1480,\n      \"amount_requested\" : 1480,\n      \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n      \"currency\" : \"USD\",\n      \"destination\" : \"PIn21JMoPv7ETVUsX2veerqz\",\n      \"externally_funded\" : \"UNKNOWN\",\n      \"failure_code\" : null,\n      \"failure_message\" : null,\n      \"fee\" : 0,\n      \"fee_profile\" : \"FPmtT4MYmiAs1qjLjneQmk4d\",\n      \"idempotency_id\" : null,\n      \"merchant\" : \"MUm7bNiYEz3SFvnRt1Du2gdd\",\n      \"merchant_identity\" : \"IDcBRoYmENZ6w5rykNyFE74p\",\n      \"messages\" : [ ],\n      \"operation_key\" : null,\n      \"parent_transfer\" : null,\n      \"parent_transfer_trace_id\" : null,\n      \"raw\" : null,\n      \"ready_to_settle_at\" : null,\n      \"receipt_last_printed_at\" : null,\n      \"security_code_verification\" : null,\n      \"source\" : null,\n      \"split_transfers\" : null,\n      \"state\" : \"SUCCEEDED\",\n      \"statement_descriptor\" : null,\n      \"subtype\" : \"SETTLEMENT_PLATFORM\",\n      \"supplemental_fee\" : null,\n      \"tags\" : { },\n      \"tip_amount\" : null,\n      \"trace_id\" : \"3bf97568-23f0-48eb-8f6a-e97c565b0c64\",\n      \"type\" : \"CREDIT\",\n      \"_links\" : {\n        \"application\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n        },\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRs2gnpaFEFk2zdyQ37GMezU\"\n        },\n        \"merchant_identity\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/identities/IDcBRoYmENZ6w5rykNyFE74p\"\n        },\n        \"payment_instruments\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRs2gnpaFEFk2zdyQ37GMezU/payment_instruments\"\n        },\n        \"reversals\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRs2gnpaFEFk2zdyQ37GMezU/reversals\"\n        },\n        \"fees\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRs2gnpaFEFk2zdyQ37GMezU/fees\"\n        },\n        \"disputes\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers/TRs2gnpaFEFk2zdyQ37GMezU/disputes\"\n        },\n        \"destination\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/payment_instruments/PIn21JMoPv7ETVUsX2veerqz\"\n        },\n        \"fee_profile\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/fee_profiles/FPmtT4MYmiAs1qjLjneQmk4d\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST3cN2PgJS9NqaqwchnHKsni/funding_transfers\"\n    },\n    \"next\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/settlements/ST3cN2PgJS9NqaqwchnHKsni/funding_transfers?after_cursor=TRs2gnpaFEFk2zdyQ37GMezU\"\n    }\n  },\n  \"page\" : {\n    \"limit\" : 100,\n    \"next_cursor\" : \"TRs2gnpaFEFk2zdyQ37GMezU\"\n  }\n}",
+      "headers": {
+        "Date": "Mon, 02 Jun 2025 15:10:13 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "61b34f58cf66612d783d58dec6ab5360",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "155",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "61b34f58cf66612d783d58dec6ab5360"
+      },
+      "status_code": 200
+    }
+  }
+]
