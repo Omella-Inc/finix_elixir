@@ -18,7 +18,12 @@ defmodule Finix.Settlements do
 
   @spec list_funding_transfers(String.t(), Keyword.t()) :: {:error, map()} | {:ok, map()}
   def list_funding_transfers(id, header_opts \\ []) do
-    FinixElixir.make_request(:get, "#{@endpoint}/#{id}/funding_transfers", nil, header_opts ++ @finix_version)
+    FinixElixir.make_request(
+      :get,
+      "#{@endpoint}/#{id}/funding_transfers",
+      nil,
+      header_opts ++ @finix_version
+    )
   end
 
   @spec update(String.t(), map(), Keyword.t()) :: {:error, map()} | {:ok, map()}
