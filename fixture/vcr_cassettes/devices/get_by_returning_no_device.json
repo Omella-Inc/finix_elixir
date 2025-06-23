@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/devices?serial_number=some-invalid-serial-number&merchant_id=MUb93oYCs6uxbmQJNyjhXX9C",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/devices?offset=0&limit=20&sort=created_at,desc&sort=id,desc\"\n    }\n  },\n  \"page\" : {\n    \"offset\" : 0,\n    \"limit\" : 20,\n    \"count\" : 0\n  }\n}",
+      "headers": {
+        "Date": "Mon, 23 Jun 2025 15:54:12 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "6b6bd7a00c0628cea8c212e5b6701c41",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "41",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "6b6bd7a00c0628cea8c212e5b6701c41"
+      },
+      "status_code": 200
+    }
+  }
+]

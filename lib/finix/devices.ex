@@ -25,13 +25,13 @@ defmodule Finix.Devices do
     FinixElixir.make_request(:get, "#{@endpoint}/#{id}", nil, header_opts, options)
   end
 
-  @spec get_by(
+  @spec get_devices_by(
           %{:merchant_id => String.t(), :serial_number => String.t()},
           Keyword.t(),
           Keyword.t()
         ) ::
           {:error, any()} | {:ok, map() | nil}
-  def get_by(
+  def get_devices_by(
         %{serial_number: serial_number, merchant_id: merchant_id},
         header_opts \\ [],
         options \\ []
@@ -44,11 +44,11 @@ defmodule Finix.Devices do
       options
     )
     |> case do
-      {:ok, %{page: _, _embedded: %{devices: [first_device | _]}}} ->
-        {:ok, first_device}
+      {:ok, %{page: _, _embedded: %{devices: devices}}} ->
+        {:ok, devices}
 
       {:ok, %{page: _}} ->
-        {:ok, nil}
+        {:ok, []}
 
       {:ok, finix_response} ->
         {
@@ -61,6 +61,7 @@ defmodule Finix.Devices do
     end
   end
 
+  @spec update(String.t(), map(), Keyword.t(), Keyword.t()) :: {:error, any()} | {:ok, any()}
   def update(id, payload, header_opts \\ [], options \\ []) do
     FinixElixir.make_request(:put, "#{@endpoint}/#{id}", payload, header_opts, options)
   end

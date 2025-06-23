@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/devices?serial_number=2210073655&merchant_id=MUb93oYCs6uxbmQJNyjhXX9C",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"_embedded\" : {\n    \"devices\" : [ {\n      \"id\" : \"DVsuVx1sRzxveXf7u3LEfU7Y\",\n      \"created_at\" : \"2025-06-23T16:05:08.648177Z\",\n      \"updated_at\" : \"2025-06-23T16:05:08.648177Z\",\n      \"configuration_details\" : null,\n      \"description\" : null,\n      \"enabled\" : false,\n      \"idle_message\" : null,\n      \"merchant\" : \"MUb93oYCs6uxbmQJNyjhXX9C\",\n      \"model\" : \"PAX_A800\",\n      \"name\" : \"device created by finix_elixir\",\n      \"serial_number\" : \"2210073655\",\n      \"tags\" : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/devices/DVsuVx1sRzxveXf7u3LEfU7Y\"\n        },\n        \"merchant\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/merchants/MUb93oYCs6uxbmQJNyjhXX9C\"\n        },\n        \"transfers\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers\"\n        },\n        \"authorizations\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/authorizations\"\n        }\n      }\n    }, {\n      \"id\" : \"DVsPec2cPwzMaFz4YhKXs2qo\",\n      \"created_at\" : \"2025-06-18T14:44:21.804524Z\",\n      \"updated_at\" : \"2025-06-18T14:44:21.804524Z\",\n      \"configuration_details\" : null,\n      \"description\" : null,\n      \"enabled\" : true,\n      \"idle_message\" : null,\n      \"merchant\" : \"MUb93oYCs6uxbmQJNyjhXX9C\",\n      \"model\" : \"PAX_A800\",\n      \"name\" : \"rolim's reader (Finix 33)\",\n      \"serial_number\" : \"2210073655\",\n      \"tags\" : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/devices/DVsPec2cPwzMaFz4YhKXs2qo\"\n        },\n        \"merchant\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/merchants/MUb93oYCs6uxbmQJNyjhXX9C\"\n        },\n        \"transfers\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/transfers\"\n        },\n        \"authorizations\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/authorizations\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/devices?offset=0&limit=20&sort=created_at,desc&sort=id,desc\"\n    }\n  },\n  \"page\" : {\n    \"offset\" : 0,\n    \"limit\" : 20,\n    \"count\" : 2\n  }\n}",
+      "headers": {
+        "Date": "Tue, 24 Jun 2025 11:59:31 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "d58aa4db15fac73f829437b1f5f51641",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "65",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "d58aa4db15fac73f829437b1f5f51641"
+      },
+      "status_code": 200
+    }
+  }
+]

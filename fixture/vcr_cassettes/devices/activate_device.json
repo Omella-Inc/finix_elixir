@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"action\":\"ACTIVATE\"}",
+      "url": "https://finix.sandbox-payments-api.com/devices/DVsPec2cPwzMaFz4YhKXs2qo",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "put",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"DVsPec2cPwzMaFz4YhKXs2qo\",\n  \"created_at\" : \"2025-06-18T14:44:21.804524Z\",\n  \"updated_at\" : \"2025-06-18T14:44:21.804524Z\",\n  \"android_version\" : \"10\",\n  \"configuration_details\" : {\n    \"allow_debit\" : true,\n    \"check_for_duplicate_transactions\" : true,\n    \"prompt_amount_confirmation\" : true,\n    \"prompt_manual_entry\" : false,\n    \"signature_threshold_amount\" : 10000,\n    \"bypass_device_on_capture\" : true,\n    \"prompt_receipt_confirmation\" : true,\n    \"display_tip_on_receipt\" : false,\n    \"prompt_tip_on_screen\" : false,\n    \"allow_standalone_authorizations\" : false,\n    \"allow_standalone_sales\" : false,\n    \"allow_standalone_refunds\" : false,\n    \"tipping_details\" : {\n      \"percent_tipping_threshold\" : 0,\n      \"percent_options\" : [ 18, 20, 22 ],\n      \"fixed_options\" : [ 100, 150, 200 ]\n    },\n    \"idle_message\" : null,\n    \"idle_image_file_id\" : null,\n    \"automatic_receipt_delivery_methods\" : null,\n    \"available_receipt_methods\" : null,\n    \"prompt_for_signature\" : \"NEVER\",\n    \"surcharge_basis_points\" : null\n  },\n  \"description\" : null,\n  \"enabled\" : true,\n  \"firmware_version\" : \"PayDroid_10.0.0_Eucalyptus_V20.1.23_20250108\",\n  \"idle_message\" : null,\n  \"merchant\" : \"MUb93oYCs6uxbmQJNyjhXX9C\",\n  \"model\" : \"PAX_A800\",\n  \"name\" : \"rolim's reader (Finix 33)\",\n  \"payment_app_version\" : \"5.5.0\",\n  \"serial_number\" : \"2210073655\",\n  \"tags\" : { },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/devices/DVsPec2cPwzMaFz4YhKXs2qo\"\n    },\n    \"merchant\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/merchants/MUb93oYCs6uxbmQJNyjhXX9C\"\n    },\n    \"transfers\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/transfers\"\n    },\n    \"authorizations\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/authorizations\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Mon, 23 Jun 2025 15:59:48 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "4918a5b1712280400bdf38a950ef99a3",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "location": "https://finix.sandbox-payments-api.com/devices/DVsPec2cPwzMaFz4YhKXs2qo",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "4117",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "4918a5b1712280400bdf38a950ef99a3"
+      },
+      "status_code": 200
+    }
+  }
+]
