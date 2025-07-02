@@ -71,4 +71,12 @@ defmodule Finix.TransferTest do
       end
     end
   end
+
+  describe "list transfers" do
+    test "retrieve a payment transfer" do
+      use_cassette "transfer/list" do
+        {:ok, _} = Finix.Transfers.list()
+      end
+    end
+  end
 end

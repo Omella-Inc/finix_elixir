@@ -23,4 +23,9 @@ defmodule Finix.Transfers do
   def refund(id, params, header_opts \\ []) do
     FinixElixir.make_request(:post, "#{@endpoint}/#{id}/reversals", params, header_opts)
   end
+
+  @spec list(Keyword.t()) :: {:ok, map()} | {:error, map()}
+  def list(options \\ [], header_opts \\ []) do
+    FinixElixir.make_request(:get, "#{@endpoint}", nil, header_opts, options)
+  end
 end
