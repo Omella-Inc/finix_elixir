@@ -9,6 +9,8 @@ defmodule Finix.Identities do
 
   @endpoint "identities"
 
+  @finix_version [{"Finix-Version", "2022-02-01"}]
+
   @spec create(map(), Keyword.t()) :: {:error, map()} | {:ok, map()}
   def create(params, header_opts \\ []) do
     FinixElixir.make_request(:post, @endpoint, params, header_opts)
@@ -22,5 +24,10 @@ defmodule Finix.Identities do
   @spec list(Keyword.t(), Keyword.t()) :: {:ok, map()} | {:error, map()}
   def list(header_opts \\ [], options \\ []) do
     FinixElixir.make_request(:get, @endpoint, nil, header_opts, options)
+  end
+
+  @spec create_user(String.t()) :: {:ok, map()} | {:error, map()}
+  def create_user(identity_id) do
+    FinixElixir.make_request(:post, "#{@endpoint}/#{identity_id}/users", %{}, @finix_version)
   end
 end

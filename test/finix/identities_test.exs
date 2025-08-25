@@ -63,4 +63,18 @@ defmodule Finix.IdentitiesTest do
       end
     end
   end
+
+  describe "creates a user" do
+    test "creates a user" do
+      use_cassette "identities/create_user" do
+        {:ok, response} = Finix.Identities.create_user("IDnEmXbJYVjPKik6bSZCfgce")
+
+        assert %{
+                 identity: "IDnEmXbJYVjPKik6bSZCfgce",
+                 role: "ROLE_MERCHANT",
+                 password: "*****"
+               } = response
+      end
+    end
+  end
 end
