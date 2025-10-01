@@ -13,4 +13,9 @@ defmodule Finix.Merchants do
   def get(id, header_opts \\ []) do
     FinixElixir.make_request(:get, "#{@endpoint}/#{id}", nil, header_opts)
   end
+
+  @spec update(String.t(), map(), Keyword.t(), Keyword.t()) :: {:ok, map()} | {:error, map()}
+  def update(id, body, header_opts \\ [], options \\ []) do
+    FinixElixir.make_request(:put, "#{@endpoint}/#{id}", body, header_opts, options)
+  end
 end

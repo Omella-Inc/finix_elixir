@@ -1,0 +1,52 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"settlement_enabled\":false}",
+      "url": "https://finix.sandbox-payments-api.com/merchants/not_id",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "put",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"c8f894f891de7037\",\n      \"message\" : \"not_id is not in valid format\",\n      \"code\" : \"NOT_FOUND\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/merchants/not_id\"\n        }\n      }\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Wed, 01 Oct 2025 17:48:12 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "x-request-id": "6e371222c6d8f15a38cdcd34226e02f5",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "16",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "6e371222c6d8f15a38cdcd34226e02f5"
+      },
+      "status_code": 404
+    }
+  }
+]

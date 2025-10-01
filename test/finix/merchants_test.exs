@@ -19,4 +19,29 @@ defmodule Finix.MerchantsTest do
       end
     end
   end
+
+  describe "update a merchant account" do
+    test "update a merchant account" do
+      use_cassette "merchants/update" do
+        {:ok, response} =
+          Finix.Merchants.update("MUpAx52J5qQaw3coY6545P1r", %{
+            settlement_enabled: false
+          })
+
+        assert %{
+                 id: "MUpAx52J5qQaw3coY6545P1r",
+                 settlement_enabled: false
+               } = response
+      end
+    end
+
+    test "returns error not found on update" do
+      use_cassette "merchants/update_not_found" do
+        assert {:error, :not_found} =
+                 Finix.Merchants.update("not_id", %{
+                   settlement_enabled: false
+                 })
+      end
+    end
+  end
 end
