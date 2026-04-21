@@ -1,0 +1,55 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"merchant_processors\":[{\"processor\":\"DUMMY_V1\"}],\"onboarding_data\":{\"max_transaction_amount\":100000},\"onboarding_link_details\":{\"return_url\":\"https://www.democompany.com/home\",\"expired_session_url\":\"https://www.democompany.com/login\",\"fee_details_url\":\"https://www.democompany.com/fee_details\",\"terms_of_service_url\":\"https://www.democompany.com/ToS\",\"expiration_in_minutes\":10080}}",
+      "url": "https://finix.sandbox-payments-api.com/onboarding_forms",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "post",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"obf_uEQAXAXv8sXuva4KUVWEFw\",\n  \"onboarding_data\" : {\n    \"max_transaction_amount\" : 100000,\n    \"country\" : \"USA\",\n    \"associated_files\" : [ ]\n  },\n  \"merchant_processors\" : [ {\n    \"processor\" : \"DUMMY_V1\"\n  } ],\n  \"onboarding_link_details\" : {\n    \"return_url\" : \"https://www.democompany.com/home\",\n    \"expired_session_url\" : \"https://www.democompany.com/login\",\n    \"fee_details_url\" : \"https://www.democompany.com/fee_details\",\n    \"terms_of_service_url\" : \"https://www.democompany.com/ToS\",\n    \"expiration_in_minutes\" : 10080\n  },\n  \"onboarding_link\" : {\n    \"expires_at\" : \"2026-04-28T20:01:38.363Z\",\n    \"link_url\" : \"https://sandbox.payments-dashboard.com/merchant-onboarding?formId=obf_uEQAXAXv8sXuva4KUVWEFw&applicationId=APdWgmKgPP6eNHzrVzcgVCfy&bearerToken=eyJhbGciOiJIUzUxMiJ9.eyJvbmJvYXJkaW5nX2Zvcm1faWQiOiJvYmZfdUVRQVhBWHY4c1h1dmE0S1VWV0VGdyIsImZlZV9kZXRhaWxzX3VybCI6Imh0dHBzOi8vd3d3LmRlbW9jb21wYW55LmNvbS9mZWVfZGV0YWlscyIsImV4cGlyZWRfc2Vzc2lvbl91cmwiOiJodHRwczovL3d3dy5kZW1vY29tcGFueS5jb20vbG9naW4iLCJtZXJjaGFudF9hY2hfbWF4X3RyYW5zYWN0aW9uX2Ftb3VudCI6bnVsbCwiaXNzIjoiaHR0cHM6Ly93d3cuZmluaXguY29tIiwicmV0dXJuX3VybCI6Imh0dHBzOi8vd3d3LmRlbW9jb21wYW55LmNvbS9ob21lIiwiZXhwIjoxNzc3NDA2NDk4LCJhcHBsaWNhdGlvbl9pZCI6IkFQZFdnbUtnUFA2ZU5IenJWemNnVkNmeSIsImlhdCI6MTc3NjgwMTY5OCwibWVyY2hhbnRfbWF4X3RyYW5zYWN0aW9uX2Ftb3VudCI6MTAwMDAwLCJ0ZXJtc19vZl9zZXJ2aWNlX3VybCI6Imh0dHBzOi8vd3d3LmRlbW9jb21wYW55LmNvbS9Ub1MifQ.Z1c00uUUjACj_d6DYVfR0m6Xdm0VWR3csVoArZv7_4DVk3T0bbjWUfvzpL5_AwAJWF3tAvHE4G-l6gl5uv18jQ\"\n  },\n  \"status\" : \"IN_PROGRESS\",\n  \"identity_id\" : null,\n  \"application_id\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"created_at\" : \"2026-04-21T20:01:38.353806Z\",\n  \"updated_at\" : \"2026-04-21T20:01:38.353806Z\",\n  \"tags\" : { }\n}",
+      "headers": {
+        "Date": "Tue, 21 Apr 2026 20:01:38 GMT",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "expires": "0",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "11cc7382e80e13c3eaa1eda462ba587d",
+        "pragma": "no-cache",
+        "x-frame-options": "DENY",
+        "x-content-type-options": "nosniff",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-envoy-upstream-service-time": "2394",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "11cc7382e80e13c3eaa1eda462ba587d"
+      },
+      "status_code": 201
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/onboarding_forms/not_id",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"a1280495f430d8eaf4bd942aede583ec\",\n      \"message\" : \"Unable to parse onboardingFormId not_id\",\n      \"code\" : \"NOT_FOUND\",\n      \"links\" : [ {\n        \"rel\" : \"self\",\n        \"href\" : \"https://finix.sandbox-payments-api.com/onboarding/onboarding_forms/not_id\",\n        \"hreflang\" : null,\n        \"media\" : null,\n        \"title\" : null,\n        \"type\" : null,\n        \"deprecation\" : null\n      } ]\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Tue, 21 Apr 2026 20:01:39 GMT",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "expires": "0",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "a1280495f430d8eaf4bd942aede583ec",
+        "pragma": "no-cache",
+        "x-frame-options": "DENY",
+        "x-content-type-options": "nosniff",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-envoy-upstream-service-time": "6",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "a1280495f430d8eaf4bd942aede583ec"
+      },
+      "status_code": 404
+    }
+  }
+]
