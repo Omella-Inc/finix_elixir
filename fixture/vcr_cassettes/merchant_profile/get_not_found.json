@@ -1,0 +1,53 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/merchant_profiles/not_id",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"total\" : 1,\n  \"_embedded\" : {\n    \"errors\" : [ {\n      \"logref\" : \"725ca3a125463b6be3ae09336a0ae3dd\",\n      \"message\" : \"Unable to parse merchant_profile_idnot_id\",\n      \"code\" : \"NOT_FOUND\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://finix.sandbox-payments-api.com/merchant_profiles/not_id\"\n        }\n      }\n    } ]\n  }\n}",
+      "headers": {
+        "Date": "Wed, 22 Apr 2026 15:59:23 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "725ca3a125463b6be3ae09336a0ae3dd",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "588",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Request-ID": "725ca3a125463b6be3ae09336a0ae3dd"
+      },
+      "status_code": 404
+    }
+  }
+]

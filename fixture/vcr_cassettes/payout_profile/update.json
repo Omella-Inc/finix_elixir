@@ -1,0 +1,56 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "{\"type\":\"NET\",\"net\":{\"frequency\":\"MONTHLY\",\"day_of_month\":28,\"funding_requirement\":\"DEFAULT\",\"payment_instrument_id\":\"PI5RcHz8aAQkrTL1uWi7WbnY\",\"rail\":\"NEXT_DAY_ACH\",\"submission_delay_days\":0}}",
+      "url": "https://finix.sandbox-payments-api.com/payout_profiles/POczj6f5RLtd8in1sZjfTdh",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "put",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"POczj6tnAd4f8yPosHuejt7\",\n  \"created_at\" : \"2026-04-22T16:05:34.22Z\",\n  \"updated_at\" : \"2026-04-22T16:05:34.22Z\",\n  \"linked_id\" : \"MUmtHXn1Rj17xgVzJjECtYLu\",\n  \"linked_type\" : \"MERCHANT\",\n  \"net\" : {\n    \"day_of_month\" : 28,\n    \"frequency\" : \"MONTHLY\",\n    \"funding_requirement\" : \"DEFAULT\",\n    \"payment_instrument_id\" : \"PI5RcHz8aAQkrTL1uWi7WbnY\",\n    \"rail\" : \"NEXT_DAY_ACH\",\n    \"start_time\" : null,\n    \"submission_delay_days\" : 0,\n    \"time_zone\" : \"America/New_York\"\n  },\n  \"tags\" : { },\n  \"type\" : \"NET\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/payout_profiles/POczj6tnAd4f8yPosHuejt7\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 22 Apr 2026 16:05:34 GMT",
+        "Content-Type": "application/hal+json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "expires": "0",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "x-xss-protection": "1; mode=block",
+        "x-request-id": "2a61e93f18cfff689c40a6d3f8d1793d",
+        "pragma": "no-cache",
+        "x-frame-options": "DENY",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-content-type-options": "nosniff",
+        "x-envoy-upstream-service-time": "397",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "2a61e93f18cfff689c40a6d3f8d1793d"
+      },
+      "status_code": 200
+    }
+  }
+]

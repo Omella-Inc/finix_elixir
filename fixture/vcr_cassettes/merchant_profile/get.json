@@ -1,0 +1,57 @@
+[
+  {
+    "request": {
+      "options": {
+        "ssl_options": {
+          "versions": {
+            "tlsv1.2": true,
+            "tlsv1.3": true,
+            "tlsv1.1": true,
+            "tlsv1": true
+          },
+          "verify": "verify_none"
+        },
+        "recv_timeout": 30000
+      },
+      "body": "null",
+      "url": "https://finix.sandbox-payments-api.com/merchant_profiles/MPt3aUsRWAUwmKkQaPb5Vtmm",
+      "headers": {
+        "Finix-Version": "2022-02-01",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Authorization": "***"
+      },
+      "method": "get",
+      "request_body": ""
+    },
+    "response": {
+      "binary": false,
+      "type": "ok",
+      "body": "{\n  \"id\" : \"MPt3aUsRWAUwmKkQaPb5Vtmm\",\n  \"created_at\" : \"2026-04-21T23:10:51.07Z\",\n  \"updated_at\" : \"2026-04-21T23:11:03.55Z\",\n  \"application\" : \"APdWgmKgPP6eNHzrVzcgVCfy\",\n  \"card_present_fee_profile\" : null,\n  \"fee_profile\" : null,\n  \"payout_profile\" : \"POczhL6r6daw7E67k7YCAUq\",\n  \"risk_profile\" : \"RP98bjnbYKBUK9yqKCqtS51D\",\n  \"tags\" : { },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/merchant_profiles/MPt3aUsRWAUwmKkQaPb5Vtmm\"\n    },\n    \"application\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/applications/APdWgmKgPP6eNHzrVzcgVCfy\"\n    },\n    \"risk_profile\" : {\n      \"href\" : \"https://finix.sandbox-payments-api.com/risk_profiles/RP98bjnbYKBUK9yqKCqtS51D\"\n    }\n  }\n}",
+      "headers": {
+        "Date": "Wed, 22 Apr 2026 15:59:21 GMT",
+        "Content-Type": "application/hal+json;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Server": "nginx",
+        "x-request-id": "f6195d06a5a3c3b12f48cd215feb7561",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "finix-apiuser-role": "ROLE_PARTNER",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "pragma": "no-cache",
+        "expires": "0",
+        "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+        "x-frame-options": "DENY",
+        "x-envoy-upstream-service-time": "13",
+        "X-XSS-Protection": "1; mode=block",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Security-Policy": "default-src 'self';",
+        "X-Request-ID": "f6195d06a5a3c3b12f48cd215feb7561"
+      },
+      "status_code": 200
+    }
+  }
+]
