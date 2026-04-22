@@ -50,6 +50,26 @@ defmodule Finix.IdentitiesTest do
     end
   end
 
+  describe "get an identity merchant" do
+    test "retrieve an identity merchant" do
+      use_cassette "identities/get_merchant" do
+        {:ok,
+         %{
+           _embedded: %{
+             merchants: [
+               merchant
+             ]
+           }
+         }} = Finix.Identities.get_merchants("IDewfeNAqKkFcizjs3YWE6uv")
+
+        assert %{
+                 id: _,
+                 identity: "IDewfeNAqKkFcizjs3YWE6uv"
+               } = merchant
+      end
+    end
+  end
+
   describe "list identities" do
     test "search an identity by tag value" do
       use_cassette "identities/list" do
